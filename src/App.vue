@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Pizza />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pizza from "./components/pizza.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Pizza,
+  },
+};
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/05/09/22/eat-1237431_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
 }
 </style>
